@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiar</title>
+</head>
+<body>
+    
+    
+   {% if familiar == 'Padre' %}
+   <h1 style='color: green;'>El es tu {{familiar}}</h1>
+   {% elif familiar == 'Hermana' %}
+   <h1 style='color: rgb(255, 0, 0)'>Ella es tu {{familiar}}</h1>
+   {% else %}
+   <h1>El es tu  {{familiar}}</h1>
+    {% endif %}
+ 
+    <p>Datos del familiar </p>
+<ul>
+    {% for dato in listado_datos%}
+     <li> {{dato}}</li>
+    {% endfor %}
+</ul>
+        
+       
+    
+</body>
+</html>
